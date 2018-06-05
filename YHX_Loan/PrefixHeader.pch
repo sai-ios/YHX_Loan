@@ -1,0 +1,71 @@
+//
+//  PrefixHeader.pch
+//  YHX_Loan
+//
+//  Created by 张磊 on 2018/4/23.
+//  Copyright © 2018年 niusaibing. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <EasyShowView.h>
+#import <YYModel.h>
+#import <SGQRCode.h>
+#import <AFNetworking.h>
+#import <KafkaRefresh.h>
+#import <ZLPhotoActionSheet.h>
+#import "NSString+Trim.h"
+#import "AppConfig.h"
+#import "DataManage.h"
+#import "Logger.h"
+#import "SPToolBox.h"
+#import "STools.h"
+#import "SNBaseViewController.h"
+#import "DateUtils.h"
+#import "LoanApplyModel.h"
+#import "HttpAddParameters.h"
+#import "AWRActionSheetView.h"
+
+
+#define MAS_SHORTHAND
+//给请求body添加设备基础信息
+#define paramesAddDictionary(ids) [HttpAddParameters addFixedValueWithDic:ids]
+
+#define pcScreenWidth [UIScreen mainScreen].bounds.size.width
+#define pcScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//用户数据保存时的key值定义
+static NSString *const USER_NAME = @"username";
+static NSString *const USER_PWDS = @"userpwd";
+static NSString *const USER_ICON = @"userIcon";
+static NSString *const XYAPPLY_PROMNO = @"promno";//兴业进件代码
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//常用颜色定义#ff9249  -->  255, 146, 73
+#define SoilRedLight [UIColor colorWithRed:255/255.0 green:146/255.0 blue:73/255.0 alpha:1.0]
+//常用颜色定义fe7551    -->  254, 117, 81
+#define SoilRedDark [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+//可设置透明度的颜色选择
+#define AColor(r, g, b，al) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(al)]
+#define ALRGB(rgbValue,al) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0 blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:(al)]
+
+#define XZColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define IColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define XZRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0 blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
+
+#define ICRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0 blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
+
+#define BACKGROUNDCOLOR   XZRGB(0xf4f1f1)
+#define SEARCHBACKGROUNDCOLOR  [UIColor colorWithRed:(110.0)/255.0 green:(110.0)/255.0 blue:(110.0)/255.0 alpha:0.4]
+
+
+#define EMOJI_CODE_TO_SYMBOL(x) ((((0x808080F0 | (x & 0x3F000) >> 4) | (x & 0xFC0) << 10) | (x & 0x1C0000) << 18) | (x & 0x3F) << 24);
+
+#define pcBackgroundColor [UIColor colorWithRed:242/255.0f green:246/255.0f blue:248/255.0f alpha:1.0f];
+
+#endif /* PrefixHeader_pch */
+

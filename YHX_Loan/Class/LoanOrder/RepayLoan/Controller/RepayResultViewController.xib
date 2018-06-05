@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepayResultViewController">
+            <connections>
+                <outlet property="resultImage" destination="iUx-y4-wLS" id="8xC-U3-4dJ"/>
+                <outlet property="resultTipLable" destination="S4D-n5-fDs" id="yXi-Fi-FnO"/>
+                <outlet property="resultTitleText" destination="cuy-bC-F8N" id="7rU-gt-3cY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="refund_icon_submit_success" translatesAutoresizingMaskIntoConstraints="NO" id="iUx-y4-wLS">
+                    <rect key="frame" x="98" y="60" width="179" height="115"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还款申请成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuy-bC-F8N">
+                    <rect key="frame" x="126.5" y="205" width="122.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请耐心等待！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4D-n5-fDs">
+                    <rect key="frame" x="141.5" y="239" width="92" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05f-ev-mxN">
+                    <rect key="frame" x="32" y="317" width="311" height="52"/>
+                    <state key="normal" title="点击返回" backgroundImage="btn_gradient">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="backBtOnClick:" destination="-1" eventType="touchUpInside" id="aVU-sv-zJ4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iUx-y4-wLS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="AXQ-i9-58T"/>
+                <constraint firstItem="S4D-n5-fDs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HPm-SJ-1gT"/>
+                <constraint firstItem="iUx-y4-wLS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aQZ-is-2et"/>
+                <constraint firstItem="cuy-bC-F8N" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lls-gF-zFl"/>
+                <constraint firstItem="cuy-bC-F8N" firstAttribute="top" secondItem="iUx-y4-wLS" secondAttribute="bottom" constant="30" id="olx-Nz-RIJ"/>
+                <constraint firstItem="05f-ev-mxN" firstAttribute="top" secondItem="S4D-n5-fDs" secondAttribute="bottom" constant="60" id="rVu-YL-SM3"/>
+                <constraint firstItem="05f-ev-mxN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rqb-b9-Ij0"/>
+                <constraint firstItem="S4D-n5-fDs" firstAttribute="top" secondItem="cuy-bC-F8N" secondAttribute="bottom" constant="10" id="v0r-EI-KmI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="14" y="56"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_gradient" width="311" height="52"/>
+        <image name="refund_icon_submit_success" width="179" height="115"/>
+    </resources>
+</document>

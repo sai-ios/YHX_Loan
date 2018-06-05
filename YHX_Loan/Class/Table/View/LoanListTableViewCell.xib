@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="LoanListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Fa-CJ-bBK">
+                        <rect key="frame" x="20" y="88.5" width="284" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="0TQ-dm-xNv"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZQ-OB-xb4">
+                        <rect key="frame" x="20" y="57" width="27" height="16.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qk-c9-VQq">
+                        <rect key="frame" x="267.5" y="26" width="36.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="审核中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jl-9x-7av">
+                        <rect key="frame" x="264" y="57.5" width="40" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Paf-wz-6mR">
+                        <rect key="frame" x="257" y="33.5" width="7.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="小额贷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwf-lE-E2a">
+                        <rect key="frame" x="20" y="26" width="52" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="4Fa-CJ-bBK" secondAttribute="trailing" constant="20" id="1RU-nk-xe6"/>
+                    <constraint firstItem="6Qk-c9-VQq" firstAttribute="bottom" secondItem="Nwf-lE-E2a" secondAttribute="bottom" id="36i-2a-VwP"/>
+                    <constraint firstItem="6Qk-c9-VQq" firstAttribute="trailing" secondItem="4Fa-CJ-bBK" secondAttribute="trailing" id="AsP-uK-r4m"/>
+                    <constraint firstItem="Nwf-lE-E2a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="J9L-pb-vyd"/>
+                    <constraint firstAttribute="bottom" secondItem="4Fa-CJ-bBK" secondAttribute="bottom" id="RWO-0i-BYf"/>
+                    <constraint firstItem="4Fa-CJ-bBK" firstAttribute="leading" secondItem="Nwf-lE-E2a" secondAttribute="leading" id="WIQ-BT-vuI"/>
+                    <constraint firstItem="oZQ-OB-xb4" firstAttribute="top" secondItem="Nwf-lE-E2a" secondAttribute="bottom" constant="10" id="YoV-aE-bOZ"/>
+                    <constraint firstItem="6Qk-c9-VQq" firstAttribute="leading" secondItem="Paf-wz-6mR" secondAttribute="trailing" constant="3" id="d9E-KA-KhY"/>
+                    <constraint firstItem="6Qk-c9-VQq" firstAttribute="bottom" secondItem="Paf-wz-6mR" secondAttribute="bottom" id="dB6-Vj-GM8"/>
+                    <constraint firstItem="6jl-9x-7av" firstAttribute="bottom" secondItem="oZQ-OB-xb4" secondAttribute="bottom" id="fWR-3k-3Z4"/>
+                    <constraint firstItem="6jl-9x-7av" firstAttribute="trailing" secondItem="4Fa-CJ-bBK" secondAttribute="trailing" id="gSm-iO-HOs"/>
+                    <constraint firstItem="oZQ-OB-xb4" firstAttribute="leading" secondItem="Nwf-lE-E2a" secondAttribute="leading" id="ke8-Zb-w6W"/>
+                    <constraint firstItem="4Fa-CJ-bBK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ml9-rj-hae"/>
+                    <constraint firstItem="4Fa-CJ-bBK" firstAttribute="top" secondItem="oZQ-OB-xb4" secondAttribute="bottom" constant="15" id="twD-dp-vfS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="loanDateLabel" destination="oZQ-OB-xb4" id="FuZ-kG-9Jo"/>
+                <outlet property="loanMoneyLabel" destination="6Qk-c9-VQq" id="71J-Hk-2bF"/>
+                <outlet property="loanName" destination="Nwf-lE-E2a" id="W24-UU-KOB"/>
+                <outlet property="loanStatusLabel" destination="6jl-9x-7av" id="AUA-Dh-dyb"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="87"/>
+        </tableViewCell>
+    </objects>
+</document>

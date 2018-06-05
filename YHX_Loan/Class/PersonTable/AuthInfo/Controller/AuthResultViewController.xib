@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthResultViewController">
+            <connections>
+                <outlet property="finishBtn" destination="bNh-c7-FtS" id="l4o-EI-rKH"/>
+                <outlet property="resultImage" destination="bfa-1o-beK" id="GZ1-NC-rYJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="icon_submit_success" translatesAutoresizingMaskIntoConstraints="NO" id="bfa-1o-beK">
+                    <rect key="frame" x="81" y="161" width="212" height="171"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="212" id="9Sj-xm-T6t"/>
+                        <constraint firstAttribute="height" constant="171" id="HjA-p9-Ghw"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="erK-hB-YmO" userLabel="Viewcenter">
+                    <rect key="frame" x="67" y="333" width="240" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="86T-xB-h79"/>
+                        <constraint firstAttribute="width" constant="240" id="TOX-aX-EAq"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNh-c7-FtS">
+                    <rect key="frame" x="81" y="387" width="213" height="52"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="完成返回" backgroundImage="btn_gradient"/>
+                    <connections>
+                        <action selector="finishBtnOnClick:" destination="-1" eventType="touchUpInside" id="bCd-xL-fHv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="erK-hB-YmO" firstAttribute="top" secondItem="bfa-1o-beK" secondAttribute="bottom" constant="1" id="4fh-vc-ISi"/>
+                <constraint firstItem="bNh-c7-FtS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="THI-zS-itn"/>
+                <constraint firstItem="bfa-1o-beK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="V4c-Eu-eBU"/>
+                <constraint firstItem="bNh-c7-FtS" firstAttribute="top" secondItem="bfa-1o-beK" secondAttribute="bottom" constant="55" id="dMa-ml-0n9"/>
+                <constraint firstItem="erK-hB-YmO" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="k91-gi-vcg"/>
+                <constraint firstItem="erK-hB-YmO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mZt-L4-RNV"/>
+                <constraint firstItem="bNh-c7-FtS" firstAttribute="leading" secondItem="bfa-1o-beK" secondAttribute="leading" id="y0t-dn-jNH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_gradient" width="311" height="52"/>
+        <image name="icon_submit_success" width="212" height="171"/>
+    </resources>
+</document>

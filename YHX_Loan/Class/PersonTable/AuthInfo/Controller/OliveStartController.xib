@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OliveStartController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1U-tj-cZU">
+                    <rect key="frame" x="31.5" y="481" width="311" height="52"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="开始拍摄" backgroundImage="btn_gradient">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startOliveClick:" destination="-1" eventType="touchUpInside" id="RNd-5E-cBs"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请确保是本人操作" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mk7-KK-jxV">
+                    <rect key="frame" x="126.5" y="543" width="122.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="oliveapp_normative_gestures" translatesAutoresizingMaskIntoConstraints="NO" id="JJD-cZ-7ru">
+                    <rect key="frame" x="31" y="226" width="313" height="215"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请正对手机，确保光线充足" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czu-A8-HPJ">
+                    <rect key="frame" x="84" y="70" width="208" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Czu-A8-HPJ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="50" id="Cjm-It-OrS"/>
+                <constraint firstItem="Mk7-KK-jxV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EyF-Jq-tPu"/>
+                <constraint firstItem="A1U-tj-cZU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H96-yd-VnJ"/>
+                <constraint firstItem="Mk7-KK-jxV" firstAttribute="top" secondItem="A1U-tj-cZU" secondAttribute="bottom" constant="10" id="Ke5-Bx-cAQ"/>
+                <constraint firstItem="A1U-tj-cZU" firstAttribute="leading" secondItem="JJD-cZ-7ru" secondAttribute="leading" id="VfF-Yc-Yhi"/>
+                <constraint firstItem="JJD-cZ-7ru" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="fAI-av-YGf"/>
+                <constraint firstItem="A1U-tj-cZU" firstAttribute="top" secondItem="JJD-cZ-7ru" secondAttribute="bottom" constant="40" id="p2H-j8-rhj"/>
+                <constraint firstItem="JJD-cZ-7ru" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="t7U-2E-cWW"/>
+                <constraint firstItem="Czu-A8-HPJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xdD-li-2iG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_gradient" width="311" height="52"/>
+        <image name="oliveapp_normative_gestures" width="225" height="215"/>
+    </resources>
+</document>
